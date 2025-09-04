@@ -1,6 +1,6 @@
-self.addEventListener("install", (e) => {
+self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open("skill-tracker").then((cache) =>
+    caches.open("skill-tracker").then(cache =>
       cache.addAll([
         "/",
         "/index.html",
@@ -12,8 +12,8 @@ self.addEventListener("install", (e) => {
   );
 });
 
-self.addEventListener("fetch", (e) => {
+self.addEventListener("fetch", e => {
   e.respondWith(
-    caches.match(e.request).then((response) => response || fetch(e.request))
+    caches.match(e.request).then(resp => resp || fetch(e.request))
   );
 });
