@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+}
+
+.add-skill {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-skill input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-skill button {
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.skill {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background: #4caf50;
+  height: 10px;
+  width: 0%;
+}
