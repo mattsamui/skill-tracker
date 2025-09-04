@@ -14,6 +14,7 @@ body {
 h1 {
   text-align: center;
   color: #4caf50;
+  font-size: 1.5em;
 }
 
 .add-skill {
@@ -58,4 +59,8 @@ h1 {
   background: #4caf50;
   height: 10px;
   width: 0%;
+}
+
+button {
+  margin-top: 5px;
 }
