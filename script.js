@@ -50,6 +50,17 @@ document.getElementById("addSkillBtn").addEventListener("click", () => {
   renderSkills();
   document.getElementById("skillName").value = "";
 });
+// Add a new event
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("addSkillBtn").addEventListener("click", () => {
+    const name = document.getElementById("skillName").value.trim();
+    if (!name) return alert("Enter skill name.");
+    skills.push({ name, targetHours: 10000, seconds: 0, secondsSaved: 0, running: false, startTime: null });
+    saveSkills();
+    renderSkills();
+    document.getElementById("skillName").value = "";
+  });
+});
 
 // Start/Stop timer
 function toggleTimer(index) {
@@ -99,3 +110,4 @@ setInterval(() => {
 }, 1000);
 
 renderSkills();
+
